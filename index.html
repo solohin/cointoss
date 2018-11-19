@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <style>
+    .option{
+      text-align: center;
+      padding: 20px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container" style="max-width: 500px;">
+    <h3>
+       Rigged coin
+      <small>By Rebel Forces</small>
+    </h3>
+    <label for="tailsChance">Tails chance</label>
+    <small>You can change it any time, 0-100%</small>
+    <div class="form-group">
+      <input type="number" class="form-control" id="tailsChance" value=50 min=0 max=100 required>
+    </div>
+    <button type="button" class="btn btn-primary btn-block">Flip!</button>
+    <div id="heads" class="option">
+      <div class="comment">Heads</div>
+      <img src="https://www.random.org/coins/faces/60-usd/0025c-ga/obverse.jpg"/>
+    </div>
+    <div id="tails" class="option">
+      <div class="comment">Tails</div>
+      <img src="https://www.random.org/coins/faces/60-usd/0025c-ga/reverse.jpg"/>
+    </div>
+  </div>
+  
+  
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>
