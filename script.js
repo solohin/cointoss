@@ -36,6 +36,7 @@ $('document').ready(function(){
 //     text += 'Best heads streak: ' + bestHeadsStreak + '\n'
 //     text += 'Best tails streak: ' + bestTailsStreak + '\n'
     $('#stats').text(text)
+    console.log(text)
   }
   showStats()
   var needRender = false
