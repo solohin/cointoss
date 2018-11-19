@@ -5,7 +5,7 @@ $('document').ready(function(){
      
      var tailsChance = parseFloat($('#tailsChance').val())
      
-     $('#tails, #heads').fadeOut('slow',function(){
+     $('#tails, #heads').fadeOut('fast',function(){
         if(random > tailsChance){
           $('#heads').show()
         }else{
