@@ -9,6 +9,10 @@
       text-align: center;
       padding: 20px;
       display: none;
+      font-size: 18px;
+    }
+    .comment{
+      padding-bottom: 15px;
     }
   </style>
 </head>
@@ -25,19 +29,23 @@
     </div>
     <button type="button" class="btn btn-primary btn-block">Flip!</button>
     <div id="heads" class="option">
-      <div class="comment">Heads</div>
+      <div class="comment">
+        <span class="label label-primary">Head</span>
+      </div>
       <img src="https://www.random.org/coins/faces/60-usd/0025c-ga/obverse.jpg"/>
     </div>
     <div id="tails" class="option">
-      <div class="comment">Tails</div>
+      <div class="comment">
+        <span class="label label-success">Tail</span>
+      </div>
       <img src="https://www.random.org/coins/faces/60-usd/0025c-ga/reverse.jpg"/>
     </div>
+    <pre id="stats" style="display:none"></pre>
   </div>
   
   
 <script src="https://code.jquery.com/jquery.min.js"></script>
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="script.js"></script>
 </body>
 </html>
