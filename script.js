@@ -5,12 +5,13 @@ $('document').ready(function(){
      
      var tailsChance = parseFloat($('#tailsChance').val())
      
-     if(random > tailsChance){
-       $('#tails').hide()
-       $('#heads').show()
-     }else{
-       $('#tails').show()
-       $('#heads').hide()
-     }
+     $('#tails, #heads').fadeOut(function(){
+        if(random > tailsChance){
+          $('#heads').show()
+        }else{
+          $('#tails').show()
+        }
+     })
+     
    })
 })
